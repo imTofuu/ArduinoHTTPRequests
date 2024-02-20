@@ -61,4 +61,13 @@ JsonDocument doc; // Assuming it already contains the example JSON
 Serial.println(doc["name"].as<String>()); // Can be String or const char*
 Serial.println(doc["age"].as<int>());
 Serial.println(doc["children"].as<float>());
+
+//Alternatively
+String name = doc["name"];
+int age = doc["age"];
+float children = doc["children"];
+
+Serial.println(name);
+Serial.println(age);
+Serial.println(children);
 ```
