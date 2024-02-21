@@ -1,4 +1,4 @@
-#include "PEAPHTTP.h"
+#include "HTTP.h"
 #include <WiFi.h>
 
 // Only here so PEAPHTTP can extend HTTP.

@@ -9,3 +9,12 @@ class HTTP {
   private:
   HTTP();
 };
+
+class PEAPHTTP : public HTTP {
+  public:
+  static void begin(String SSID, String PASS);
+  static void begin(String SSID, String identity, String username, String PASS);
+  static void begin(String SSID, String identity, String PASS);
+  private:
+  PEAPHTTP();
+};

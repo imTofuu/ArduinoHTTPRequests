@@ -10,15 +10,20 @@ There is planned future support for:
 * A better, more secure way of logging in to network.
 
 ## Usage:
+
+**This documentation applies to this version only. For older versions, read the README.md in the root folder of that version.**
+
 After adding the zip file to library manager, the process of using the library is mostly the same for both types of supported networks
 except for the setup. For anyone who needs support, see example.ino (for regular connections) and examplepeap.ino (for peap connections)
 or by opening the file or finding them in the examples menu in the Arduino IDE.
 
-### WPA
 Remember to include the correct file:
+**As of version 1.1.2, PEAPHTTP.h and HTTP.h have been merged.**
 ```c
 #include <HTTP.h>
 ```
+
+### WPA
 Establish the connection (and set the pinmode for the built in led):
 ```c
 void setup() {
@@ -27,10 +32,6 @@ void setup() {
 ```
 
 ### PEAP
-Include the correct file:
-```c
-#include <PEAPHTTP.h>
-```
 The connection can be established in 2 different ways. Choose that which applies to your specific network:
 ```c
 void setup() {
