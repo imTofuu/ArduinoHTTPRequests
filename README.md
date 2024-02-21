@@ -18,10 +18,10 @@ except for the setup. For anyone who needs support, see example.ino (for regular
 or by opening the file or finding them in the examples menu in the Arduino IDE.
 
 Remember to include the correct file:
-**As of version 1.1.2, PEAPHTTP.h and HTTP.h have been merged.**
 ```c
 #include <HTTP.h>
 ```
+**As of v1.1.2, PEAPHTTP.h and HTTP.h have been merged.**
 
 ### WPA
 Establish the connection (and set the pinmode for the built in led):
