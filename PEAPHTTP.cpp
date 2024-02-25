@@ -19,10 +19,10 @@ void PEAPHTTP::begin(String SSID, String identity, String PASS) {
 
 void PEAPHTTP::begin(String SSID, String identity, String username, String PASS) {
   Serial.println("Attempting to connect...");
-  WiFi.mode(WIFI_STA); // Set connection mode (STAtion : Connect to a network | AccessPoint : Become a network | APSTA : Both)
+  WiFi.mode(WIFI_STA);  // Set connection mode (STAtion : Connect to a network | AccessPoint : Become a network | APSTA : Both)
   WiFi.begin(SSID, WPA2_AUTH_PEAP, identity, username, PASS);
 
-  while(WiFi.status() != WL_CONNECTED) // Wait until connected
+  while (WiFi.status() != WL_CONNECTED)  // Wait until connected
     continue;
   Serial.println("Connected.");
   Serial.print("Local ip:");

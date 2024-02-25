@@ -72,3 +72,7 @@ Serial.println(name);
 Serial.println(age);
 Serial.println(children);
 ```
+
+## Credits
+[ArduinoJson](https://arduinojson.org/) for providing a way to serialize and deserialize 
+JSONs. This library was used to make functionality for the methods in JSON.h.
